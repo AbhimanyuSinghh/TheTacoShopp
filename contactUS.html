@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name= "author" content= "Abhimanyu Singh">
+            <meta name= "description" content="Hi, This page is about, The Taco Shop">
+            <title>
+                Contact LTS
+            </title>
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="taco.css" type="text/css">
+    </head>
+    <body>
+        <h1>
+            Contact Us for feedback & suggestions!
+        </h1>
+        <figure>
+            <img src="img/tacos_close_up_400x260.png" alt="Close Up Taco Tray Look"
+            title="Taco Tray Close Up" width="300" height="300">
+            <figcaption>
+                The LTS Tacos
+            </figcaption>
+        </figure>
+        <nav aria-label="primary">
+            <ul>
+                <li>
+                    <a href="main.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" target="_blank">About LTS</a>
+                </li>
+                <li>
+                    <a href="timings.html" target="_blank">Timings</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact US</a>
+                </li>
+            </ul>
+        </nav>
+        <article id="contact">
+            <h2>
+                Our Contact Information
+            </h2>
+            <section>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>
+                            Send Us A Message
+                        </legend>
+                        <p>
+                            <label for="fullName">Name</label>
+                            <input type="text" name="fullName" id="fullName"
+                            placeholder="Type Your Name Here" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="emailAddress">Email-Address</label>
+                            <input type="email" name="emailAddress" id="emailAddress"
+                            placeholder="Type Your Email Here" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="phoneNumber">Mobile</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber"
+                            placeholder="+91-1234567894" pattern="+-[0-9]{2}-[0-9]{10}"
+                            required>
+                        </p>
+                        <!--
+                            <p>
+                            <label for="birthDay">Pls tell your Birthday, so we treat you</label>
+                            <input type="text" name="" id="">
+                            </p>
+                            will add proper birthdate, month and year selector here
+                        -->
+                        <p>
+                            <label for="favouriteTaco">Favourite</label>
+                            <input type="text" name="favourite" id="favouriteTaco"
+                            list="item-list">
+                            <datalist id="item-list">
+                                <option value="Crunchy">Crunchy</option>
+                                <option value="Soft">Soft</option>
+                                <option value="Chips & Salsa">Chips & Salsa</option>
+                                <!--
+                                    please add an option here, others please mention and
+                                    than the person should be able to mention it, via texts.
+                                -->
+                            </datalist>
+                        </p>
+                        <label for="Message">Your Message:</label>
+                        <br>
+                        <textarea name="Message" id="Message" cols="30" rows="10"
+                        placeholder="Type Your Message Here"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+        </article>
+    </body>
